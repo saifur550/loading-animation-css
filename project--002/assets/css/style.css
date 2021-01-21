@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Russo+One&display=swap");
+html, body {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+
+  /* font-family: 'Russo One', sans-serif; } */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+	background: #000;
+}
+
+.loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.dots {
+	background-color: #fff;
+	width: 70px;
+	height: 70px;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	transform: scale(0.2);
+	animation: anim 1.2s infinite;
+}
+
+.red{background: red;}
+.blue{background:pink}
+.skyblue{background: yellow;}
+.green{background: greenyellow;}
+.pink{background: rgb(206, 18, 212);}
+
+.dots:nth-child(2){animation-delay: 0.8s;}
+.dots:nth-child(3){animation-delay: 0.4s;}
+.dots:nth-child(4){animation-delay: 0.8s;}
+.dots:nth-child(5){animation-delay: 0.1s;}
+.dots:nth-child(6){animation-delay: 1.2s;}
+
+
+
+
+
+
+@keyframes anim {
+
+	0%,100%{
+		transform: scale(1.2);
+	}
+	50%{
+		transform:scale(0.2);
+	}
+}
