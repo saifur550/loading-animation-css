@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+
+    /* ---------font-family-----------------*/
+    --rglBar:'Oxygen', sans-serif;
+    --navFnt:'Bungee', cursive;
+
+    --navHight:59px;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family:var(--rglBar);
+}
+
+
+.navBar {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin: 10px 58px;
+}
+
+.logo__nae {
+	height: 72px;
+	border: 5px solid red;
+	border-radius: 40px;
+}
+
+.navbar-nav  {
+    display: flex;
+}
+.navbar-nav .nav-item {
+	font-size: 1.3rem;
+	list-style: none;
+}
+.navbar-nav .nav-item .nav-link {
+	display: block;
+	padding: 10px 20px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.navbar-nav .nav-item .nav-link:hover{}
