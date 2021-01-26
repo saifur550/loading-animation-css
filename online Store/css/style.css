@@ -32,7 +32,8 @@ body{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	z-index: -1;
+    z-index: -1;
+    opacity: 0.4;
 }
 
 .logo {
@@ -56,6 +57,11 @@ body{
 	display: block;
 	padding: 10px 20px;
 	text-transform: capitalize;
-	text-decoration: none;
+    text-decoration: none;
+    
 }
-.navbar-nav .nav-item .nav-link:hover{}
+.navbar-nav .nav-item .nav-link:hover{
+    color: black;
+    background-color: #0fca28;
+    border-radius: 5px;
+}
